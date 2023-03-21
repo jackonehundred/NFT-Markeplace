@@ -4,100 +4,162 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@400;600&display=swap');
 
-
-/* не получилось убрать белый спэйс в начале
-и в конце экрана*/
-.main {
-    width: 100%;
-    height: 100%;
-    background: #2B2B2B;
-    color: white;
-    min-width: 320px;
+* {
+    box-sizing: border-box;
 }
 
-.navigation {
-    display: flex;
-    width: calc(100% - 60px);
-    margin: 30px auto;
+body {
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    width: 100%;
     height: 100%;
-    min-height: 100%;
+    background-color: #2B2B2B;
+}
+
+.header {
+    width: 100%;
+    color: #eee;
+    padding: 15px 30px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
 }
 
 .logo {
-    flex-grow: 3;  
+    display: flex;
 }
 
-.info {
-    font-family: 'Work Sans', sans-serif;
+.storefrontLogo {
+    width: 24px;
+    height: 24px;
+}
+
+.nftMarketPlaceName { 
+    width: 150px;
+    height: 15px;
+    margin-top: 6px;
+    padding-left: 4px;
+}
+
+.burger {
+    width: 24px;
+    height: 24px;
+}
+
+.content {
+    padding: 0 30px;
     width: 100%;
-    margin: 30px auto;
+    color: #eee;
 }
 
-.header-text { 
-    font-size: 28px;
-    font-weight: 600; 
-    line-height: 39.2px;
-    text-align: left;
-    vertical-align: center;    
+.content h4 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
 }
 
-.body-text {
+.content p {
+    font-family: 'Work Sans';
+    font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    vertical-align: top;
 }
 
-.image {
-    padding: 20px;
-    margin: 30px auto;
-    align-items: center;
-}
-
-/* не поулчается задать размер изображению
-через класс responsiveImage. Хотел сделать так, чтобы 
-картинка уменьшалась при уменьшении экрана, но
-не становилась больше */
-.responsiveImage {
+.spaceWalking {
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
-    max-width: 315px;
-    height: auto;
-} 
+    height: 206px;
+    padding: 0 30px;
+}
 
-/* не поял, как нормально расположить надпись и 
-иконку внутри кнопки  */
-.button {
-    max-width: 315px;
-    height: 60px;
-    background: #A259FF;
-    border-radius: 20px;
-    margin: 30px auto;
+.spaceWalkingContainer {
+    height: 109px;
+    width: calc(100%-60px);
+    background-color: #3B3B3B;
+    border-radius: 0px 0px 20px 20px;;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.spaceWalkingContainer h5 {
     color: #EEE;
-    font-family: inherit;
+    font-family: 'Work Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding: 22px 20px 0 20px;
+}
+
+.spaceWalkingArtist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px 20px 24px;
+}
+
+.spaceWalkingArtist img {
+    height: 24px;
+    width: 24px;
+}
+
+.spaceWalkingArtist p {
+    color: #EEE;
+    font-family: 'Work Sans';
     font-size: 16px;
+    font-weight: 400;
+    padding-left: 12px;
+    margin: 0;
+}
+
+.buttonContainer {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+
 }
 
-.button p {
-    color: #EEE;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 22.4px;
+.button {
+    width: 315px;
+    height: 60px;
+    color: #eee;
+    background-color: #a259ff;
+    display: inline-block;
     font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0px 50px 0px 50px;
+    font-family: 'work sans';
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 40px;
 }
 
 .button img {
-    min-width: 20px;
-    min-height: 20px;
+    height: 20px;
+    width: 20px;
 }
-/* не получилось   */
+
 .statisticsFlexConainer {
     display: flex;
     justify-content: space-around;
-    width: calc(100% - 60px);
-    margin: 30px auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    color: #EEE;
 }
 
 .statisticsFlexItem {
@@ -109,6 +171,7 @@
     font-family: 'Space Mono', 'Work Sans', sans-serif;
     font-size: 22px;
     font-weight: 700;
+    margin: 0;
 }
 
 .name {

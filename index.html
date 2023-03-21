@@ -8,49 +8,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
-        <div class="navigation">
+    <div class="wrapper">
+        <div class="header">
             <div class="logo">
-                <img src="Storefront.png" alt="logo" width="24px" height="24px"> 
-                <img src="NFT Marketplace.png" alt="NFT Marketplace" width="
-                149.56px" height="14.85px"> 
+                <img class="storefrontLogo" src="Storefront.png" alt="logo">
+                <img class="nftMarketPlaceName" src="NFT Marketplace.png" alt="NFT Marketplace">
             </div>
-            <div class="burger"><img src="menu.png" alt="burger menu" width="24px" height="24px"></div>
+<!--          TODO пустые теги сразу пишем закрытыми <div/>   -->
+            <div><img class="burger" src="menu.png" alt="burger menu"></div>
         </div>
 
-        <div class="info">
-            <p class="header-text">Discover digital art & Collect NFTs</p>
+        <div class="content">
+            <!--       TODO старайся учитывать семантику тегов согласно макету Discover digital art & Collect NFTs это главный заголовок. Заголовки идут от h1 до h6. Чем ниже число тем важнее заголовок    -->
+            <h4 class="discoverText">Discover digital art & Collect NFTs</h4>
             <p class="body-text">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
         </div>
 
-        <div class="image">
-            <img class="responiveImage" src="Image Placeholder.png" alt="image">
-            <img src="Frame 230.png" alt="frame">
-        </div>
+            <img class="spaceWalking" src="Image Placeholder.png" alt="spaceWalking">
+            <div class="spaceWalkingContainer">
+                <h5>Space Walking</h5>
+                <div class="spaceWalkingArtist">
+                    <img src="Avatar.png" alt="Avatar">
+                    <p>Animakid</p>
+                </div>
+            </div>
 
-        <div class="button" type="button" name="start">
-            <img src="RocketLaunch.png" alt="rocket icon">
-            <p>Started</p>
-        </div> 
-
-        <div class="statisticsFlexConainer">
-            <div class="statisticsFlexItem">
-                <div class="amount">240 K+</div>
-                <div class="name">Total Sale</div>
+            <div class="buttonContainer">
+                    <!--            TODO старайся быть внимательнее на макете Get Started -->
+                    <button class="button" type="button" name="start">
+                        <img src="RocketLaunch.png" alt="rocket icon">
+                        Get Started
+                    </button>
             </div>
-            <div class="statisticsFlexItem">
-                <div class="amount">240 K+</div>
-                <div class="name">Auctions</div>
+            <!-- TODO лучше давать более физические названия без привязке css те Сontainer & Item а еще лучше смотреть на то, что это из себя представляет это блок статистики поэтому можно statisctic а ее элементы statistic__item (это пример именования из методологии БЭМ)  -->
+            <div class="statisticsFlexConainer">
+                <div class="statisticsFlexItem">
+                    <h5 class="amount">240k+</h5>
+                    <div class="name">Total Sale</div>
+                </div>
+                <div class="statisticsFlexItem">
+                    <h5 class="amount">100k+</h5>
+                    <div class="name">Auctions</div>
+                </div>
+                <div class="statisticsFlexItem">
+                    <h5 class="amount">240k+</h5>
+                    <div class="name">Artists</div>
+                </div>
             </div>
-            <div class="statisticsFlexItem">
-                <div class="amount">240 K+</div>
-                <div class="name">Artists</div>
-            </div>
-            <br>
-            <br>
-            <br>
         </div>
     </div>    
-<script src="app.js"></script>    
 </body>
 </html>
