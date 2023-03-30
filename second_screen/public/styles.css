@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    background-color: #2B2B2B;
+}
+
+.second-screen__header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'work sans';
+}
+
+.second-screen__heading {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39.2px;
+}
+
+.second-screen__description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.second-screen__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*не понял смысла обращения к дочерним айтемам, пришлось все равно обращаться к отдельным айтемам в контейнере, тк не получалось корректно задать марджины
+если обращаться к ласт чайлд, например, задавать высоту и ширину, то в браузере изменений не происходит*/
+.collection-cards {
+    width: 95px;
+    height: 95px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 125px;
+    margin-right: 15px;
+}
+
+.collection-cards:first-child {
+    width: 315px;
+    height: 315px;
+    border-radius: 20px;
+    margin-right: 0;
+}
+
+.collection-cards:last-child { 
+    width: 95px;
+    height: 95px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-photo {
+    margin: 15px 15px 0 0;
+}
+
+.number-nft {
+    width: 95px;
+    height: 95px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.number-nft__count {
+    margin: 0;
+    font-family: 'space mono';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.collection-cards-footer {
+    margin-bottom: 42px;
+}
+
+.collection-footer__title {
+    margin: 0;
+    font-family: 'work sans';
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    line-height: 30.1px;
+}
+
+.collection-footer__description {
+    display: flex;
+    align-items: center;
+}
+
+.collection-footer__avatar {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+.collection-footer__name {
+    font-family: 'work sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: white;
+}
