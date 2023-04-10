@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&family=Space+Mono&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -7,10 +9,6 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-}
-
-.artist__main {
-    max-height: 100px;
 }
 
 .avatar-label {
@@ -27,19 +25,30 @@ body, html {
     color: white;
 }
 
-.artist-item {
+.avatar-label__count {
+    margin: 0;
+    color: #858584;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.artist-item { 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #3B3B3B;
     border-radius: 20px;
     position: relative;
+    padding: 20px;
 }
 
-.avatar-image {
+.artist-image {
+    margin-right: 20px;
     height: 60px;
     width: 60px;
-    margin: 20px;
 }
 
 
@@ -47,11 +56,10 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 20px;
 }
 
 .artist-info__name {
-    margin: 0;
+    margin: 0 0 5px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
@@ -82,6 +90,6 @@ body, html {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 22px;
     color: white;
 }
