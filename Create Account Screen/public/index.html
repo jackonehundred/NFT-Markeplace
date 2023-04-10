@@ -29,28 +29,38 @@
                         <p class="description">Welcome! enter your details and start creating, collecting and selling NFTs.</p>
                     </div>
                     <form class="form">
-                        <div class="input-wrap">
-                            <i class="input-i">
-                                <img src="../src/assets/User.svg" alt="user icon" class="input-icon">
-                            </i>
-                            <input type="text" placeholder="Username" required class="input-field">
-                        </div>
-                        <div class="input-wrap">
-                            <img src="../src/assets/EnvelopeSimple.svg" alt="user icon" class="input-icon">
-                            <input type="email" placeholder="Email Address" required class="input-field">
-                        </div>
-                        <div class="input-wrap">
-                            <img src="../src/assets/LockKey.svg" alt="user icon" class="input-icon">
-                            <input type="password" placeholder="Password" required class="input-field">
-                        </div>
-                        <div class="input-wrap">
-                            <img src="../src/assets/LockKey.svg" alt="user icon" class="input-icon">
-                            <input type="password" placeholder="Confirm Password" required  class="input-field">
-                        </div>
+                        <div class="form-wrapper">
+
+                            <label for="username" class="form-item">
+                                <img src="../src/assets/User.svg" alt="user icon" class="input-icon" />
+                                <input placeholder="Username" id="username" type="text" name="username" class="input-field" />
+                            </label>
+
+
+                            <label for="email" class="form-item">
+                                <img src="../src/assets/EnvelopeSimple.svg" alt="user icon" class="input-icon">
+                                <input placeholder="Email Address" id="email" type="email" required class="input-field">
+                            </label>
+
+                            <label for="password" class="form-item">
+                                <img src="../src/assets/LockKey.svg" alt="user icon" class="input-icon">
+                                <input placeholder="Password" id="password" type="password" required class="input-field">
+                            </label> 
+
+                            <label for="passwordConfirmation" class="form-item">
+                                <img src="../src/assets/LockKey.svg" alt="user icon" class="input-icon">
+                                <input placeholder="Confirm Password" id="passwordConfirmation" type="password" required  class="input-field">
+                            </label>
+                            
+                        </div>    
+                        
+                        <button class="button">
+                            <p>Create Account</p>
+                        </button>
+
+    
                     </form>
                 </div>
-    
-                <div class="button">
     
                 </div>
         </div>

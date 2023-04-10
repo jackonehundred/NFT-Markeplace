@@ -89,31 +89,68 @@ body, html {
     align-items: center;
 }
 
-.input-wrap {
-    display: inline-flex;
-  }
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-item:last-child {
+    margin-bottom: 30px;
+}
+
+/*не могу покрасить svg*/
+
+.input-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
 
 .input-field {
-    flex: 1;
-    position: relative;
-    background-color: #FFFFFF;
+    width: 100%;
+    padding: 12px 20px 12px 52px;
     border: 1px solid #858584;
     border-radius: 20px;
+    box-sizing: border-box;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 22px;
+    color: #2B2B2B;
 }
 
-.input-field i {
-    position: absolute;
+.button {
+    margin: 0 0 40px 0;
+    padding: 12px 97px;
+    min-width: 224px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #A259FF;
+    border: none;
+    user-select: none;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
 }
 
-.input-icon {
-    color: #BDBDBD;
-    padding: 13px 12px 13px 20px;
-    z-index: 1;
+.button p {
+    margin: 0;
+    white-space: nowrap;
 }
 
-.
+
+
